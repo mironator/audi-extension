@@ -1,0 +1,60 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "inlineSourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "alwaysStrict": true,
+        "downlevelIteration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "Node",
+        "module": "commonjs",
+        "target": "es6",
+        "lib": [
+            "es2019",
+            "DOM",
+            "ES2020.Promise",
+            "es2020.string"
+        ],
+        "jsx": "react",
+        "outDir": "./build",
+        // Production specific
+        "removeComments": true,
+        "sourceMap": false,
+        // Checks
+        "allowUnreachableCode": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "baseUrl": ".",
+        "paths": {
+            "src/*": [
+                "src/*"
+            ]
+        },
+        "types": [
+            "vss-web-extension-sdk",
+            "jest"
+        ]
+    },
+    // for eslint purposes if configured with typescript options
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./*.js",
+        "./*.ts",
+        "src/custom-multivalue-control/webpack.config.js"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

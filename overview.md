@@ -1,0 +1,1 @@
+This extension is used for test purposes only.
